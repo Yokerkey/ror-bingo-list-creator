@@ -15,7 +15,7 @@ import org.json.simple.parser.ParseException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-public interface gui {
+public class gui {
     public static void main(String args[]){
 
 

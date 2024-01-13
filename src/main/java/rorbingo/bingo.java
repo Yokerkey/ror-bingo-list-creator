@@ -76,6 +76,7 @@ public class bingo {
                 bingos.add(racerBingo.get(i) + " wins a loadout");
             }
             System.out.println(bingos);
+            createFile.main(null, bingos);
             return bingos;
 
 
