@@ -304,7 +304,7 @@
         "Any Drone survives the Mithrix fight (not rebought, at least 2 Pizza cycles done)": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
         "Any Pearl": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "Any Perforator (Molten/Charged)": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
-        "Apothecary and Templar alive at the same time on Sanctuary": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
+        "Apothecary and Templar alive at the same time on Sanctuary": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "Aspect": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "AWU dies (skip does not count)": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Medium"},
         "Bazaar soups used": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
