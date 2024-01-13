@@ -27,7 +27,7 @@ public class bingo {
         Random rand = new Random();
 
         try {     
-            Object obj = parser.parse(new FileReader("rorbingo/src/main/resources/bingos.json"));
+            Object obj = parser.parse(new FileReader("src/main/resources/bingos.json"));
 
             JSONObject jsonObject =  (JSONObject) obj;
 

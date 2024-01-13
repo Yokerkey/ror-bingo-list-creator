@@ -173,7 +173,7 @@ public interface gui {
 
         try {
 
-            Object obj = parser.parse(new FileReader("rorbingo/src/main/resources/bingos.json"));
+            Object obj = parser.parse(new FileReader("src/main/resources/bingos.json"));
             JSONObject jsonObject =  (JSONObject) obj;
 
             JSONArray racers = (JSONArray) jsonObject.get("Racers");
@@ -195,7 +195,7 @@ public interface gui {
 
         try {
 
-            Object obj = parser.parse(new FileReader("rorbingo/src/main/resources/bingos.json"));
+            Object obj = parser.parse(new FileReader("src/main/resources/bingos.json"));
             JSONObject jsonObject =  (JSONObject) obj;
 
             JSONArray stages = (JSONArray) jsonObject.get("Stages");
