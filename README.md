@@ -2,7 +2,7 @@
 An application that creates a Bingo list for Risk of Resources Races
 
 
-#Bingos.json:
+# Bingos.json:
 
 Bingos that are not included in the general "Bingos" list, are: "Red item on Stage _?_", "_?_ printer" or "_item_ picked up" as I create them randomly based on the list of all possibilities.
 Also not included are bingos for: "_Racer_ wins loadout" because this is calculated by an input of all participating racers.
@@ -14,19 +14,19 @@ The monsters I added in the "Monsters" list, are some of the harder monsters tha
 
 I also added conditions to some of the bingos:
 
-###Condition "stages"
+### Condition "stages"
 Can only appear if specific stages are played during the race
 
-###Condition "boss item amount"
+### Condition "boss item amount"
 Ensures that we don't have multiple bingos at once that need specific amount of boss items so that we can have different versions of this bingo
 
-###Condition "lockboxes"
+### Condition "lockboxes"
 Ensures that we don't have multiple bingos at once that need interactions with lockboxes so that we can have different versions of this bingo
 
-###Condition "void seeds"
+### Condition "void seeds"
 Ensures that we don't have multiple bingos at once that are tied to the occurance of void seeds so that we can have different versions of this bingo
 
-###Condition "damage"
+### Condition "damage"
 Ensures that we don't have multiple bingos at once that are tied to collecting multiple damage% items so that we can have different versions of this bingo
 
 Bingos also have the modifiers "Happened" and "Appeared" to count the number of times the bingo occured on a race as well as the amount of times that bingo actually happened.
