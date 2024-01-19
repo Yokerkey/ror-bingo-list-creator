@@ -7,6 +7,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Random;
 
 import org.json.simple.parser.JSONParser;
@@ -24,7 +25,13 @@ public class bingo {
         ArrayList<String> bingoList = new ArrayList<String>();
         ArrayList<String> monsterList = new ArrayList<String>();
         ArrayList<String> eliteList = new ArrayList<String>();
+        ArrayList<String> conditionList = new ArrayList<String>();
         Random rand = new Random();
+
+        Boolean bossItems = true;
+        Boolean damage = true;
+        Boolean lockbox = true;
+        Boolean voidSeeds = true;
 
         try {     
             Object obj = parser.parse(new FileReader("src/main/resources/bingos.json"));
@@ -42,13 +49,49 @@ public class bingo {
                 eliteList.add(elite.get(i).toString());
 
               }
+            
+            JSONArray conditions = (JSONArray) jsonObject.get("Conditions");
+            for (int i = 0; i < conditions.size(); i++) {
+                conditionList.add(conditions.get(i).toString());
+            }
 
             JSONObject tiles = (JSONObject) jsonObject.get("Bingos");
-            HashMap<String, Array> tilesList = new HashMap<String, Array>();
+            HashMap<String, JSONObject> tilesList = new HashMap<String, JSONObject>();
             tilesList.putAll(tiles);
             //System.out.println("tilesList: " + tilesList);
-            for (String key : tilesList.keySet()) {
-                bingoList.add(key);
+            for (Map.Entry<String, JSONObject> entry : tilesList.entrySet()) {  //String key : tilesList.keySet()
+                String key = entry.getKey();
+                JSONObject value = entry.getValue();
+                //TODO: add for-if for rarity and complexity
+                String condition = (String) value.get("Condition");
+                if (condition == null) {
+                    bingoList.add(key);
+                } else if (condition.equals("boss item amount") && bossItems) {
+                    bossItems = false;
+                    bingoList.add(key);
+                } else if (condition.equals("damage") && damage) {
+                    damage = false;
+                    bingoList.add(key);
+                } else if (condition.equals("lockbox") && lockbox) {
+                    lockbox = false;
+                    bingoList.add(key);
+                } else if (condition.equals("void seeds") && voidSeeds) {
+                    voidSeeds = false;
+                    bingoList.add(key);
+                } else if (condition.equals("Abyssal Depths") && stagesBingo.contains("Abyssal Depths")) {
+                    bingoList.add(key);
+                } else if (condition.equals("Abandoned Aqueduct") && stagesBingo.contains("Abandoned Aqueduct")) {
+                    bingoList.add(key);
+                } else if (condition.equals("Distant Roost") && stagesBingo.contains("Distant Roost")) {
+                    bingoList.add(key);
+                } else if (condition.equals("Forest and Roost") && stagesBingo.contains("Siphoned Forest") && stagesBingo.contains("Distant Roost")) {
+                    bingoList.add(key);
+                }
+                //TODO
+                //bingoList.add(key);
+                System.out.println(key);
+                System.out.println(value);
+                System.out.println(condition);
                 //TODO: needs to be changed once we use weightings
             }
             //System.out.println("bingoList: " + bingoList);
@@ -67,7 +110,7 @@ public class bingo {
             for (int i = 0; i < bingosAmount; i++) {
                 String random = bingoList.get(rand.nextInt(bingoList.size()));
                 bingoList.remove(random);
-                //System.out.println("Bingo: " + random);
+                System.out.println("Bingo: " + random);
                 //System.out.println("bingoList: " + bingoList);
                 bingos.add(random);
             }
@@ -75,7 +118,7 @@ public class bingo {
             for (int i = 0; i < racerBingo.size(); i++) {
                 bingos.add(racerBingo.get(i) + " wins a loadout");
             }
-            System.out.println(bingos);
+            //System.out.println(bingos);
             createFile.main(null, bingos);
             return bingos;
 

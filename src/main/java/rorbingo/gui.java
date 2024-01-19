@@ -137,6 +137,7 @@ public class gui {
         reset.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 racerBingo.clear();
+                stagesBingo.clear();
                 mid.removeAll();
                 top.add(racersButton);
                 top.add(stagesButton);

@@ -269,7 +269,7 @@
     },
 
     "Bingos": {
-        "(Any) Door on Distant Roost is open": {"Condition": "stages", "Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
+        "(Any) Door on Distant Roost is open": {"Condition": "Distant Roost", "Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
         "1 Printer 7+ Prints": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
         "2 damage% printers on the same stage": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "2 Gloops going off at once (Vagrants count)": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
@@ -295,6 +295,7 @@
         "A racer has at least stack 1 of: Lens Makers Glasses, Crowbar, Watch, APR and Focus Crystal at once": {"Condition": "damage", "Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "A run ends with no one having Runalds Band but everyone having Kjaros Band": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
         "A run ends with no one having Kjaros Band but everyone having Runalds Band": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
+        "A run winner finishes with less than 3 movement speed from items": {"Happened": 0, "Appeared": 1, "Rarity": "Uncommon", "Complexity": "Medium"},
         "All Elite types alive at once": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "All Racers are on different stages": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
         "All Racers are on the same phase of Mithrix (on screen)": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
@@ -302,6 +303,7 @@
         "All Racers have a Healing drone alive at the same time": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
         "Altar of Gold": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "Any Drone survives the Mithrix fight (not rebought, at least 2 Pizza cycles done)": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
+        "Any drone survives Mithrix (is alive as he dies)": {"Happened": 1, "Appeared": 1, "Rarity": "Common", "Complexity": "Easy"},
         "Any Pearl": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "Any Perforator (Molten/Charged)": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "Apothecary and Templar alive at the same time on Sanctuary": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
@@ -311,8 +313,8 @@
         "Benthic Bloom picked up": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "Blood Shrine hit": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
         "Boss Item/Red Item Printer": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
-        "Cave open on Abyssal Depths": {"Condition": "stages", "Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
-        "Cave open on Forest or Roost (any door counts)": {"Condition": "stages", "Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
+        "Cave open on Abyssal Depths": {"Condition": "Abyssal Depths", "Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
+        "Cave open on Forest or Roost (any door counts)": {"Condition": "Forest and Roost", "Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
         "Chance shrine scams thrice in a row": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "Chrysalis or volcanic egg skip": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
         "Cloaked Chest": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
@@ -352,11 +354,11 @@
         "Pillars skipped": {"Happened": 0, "Appeared": 0, "Rarity": "Common", "Complexity": "Easy"},
         "Pizza Plus5": {"Happened": 0, "Appeared": 0, "Rarity": "Uncommon", "Complexity": "Easy"},
         "Plasma Shrimp + Polylute combo": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
-        "Potrolling": {"Condition" :"stages", "Happened": 0, "Appeared": 0, "Rarity": "Common", "Complexity": "Hard"},
+        "Potrolling": {"Condition" :"Abandoned Aqueduct", "Happened": 0, "Appeared": 0, "Rarity": "Common", "Complexity": "Hard"},
         "Prespawned Xi Construct": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "Racer kills a teleporter boss without touching the ground (must be airborne since before dealing the first damage)": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Hard"},
         "Racer kills the Teleporter boss (without gun) before the TP is at 15%": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Medium"},
-        "Racer opens 3 lockboxes in a run": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
+        "Racer opens 3 lockboxes in a run": {"Condition": "lockbox", "Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "Racer transfers gold to the next stage (Ghome/Shrine)": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Medium"},
         "Safer Spaces and Opal combo": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"},
         "Someones barrier exceeds half of their current max% hp": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Medium"},
@@ -373,6 +375,17 @@
 
     "Tournament_Bingos": {
         "Elimination is decided by less than 1 minute difference": {"Happened": 0, "Appeared": 0, "Rarity": "Rare", "Complexity": "Easy"}
-    }
+    },
+
+    "Conditions": [
+        "Abandoned Aqueduct",
+        "Abyssal Depths",
+        "boss item amount",
+        "damage",
+        "Distant Roost",
+        "Forest and Roost",
+        "lockbox",
+        "void seeds"
+    ]
 
 }
