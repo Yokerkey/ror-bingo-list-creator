@@ -2,6 +2,19 @@
 An application that creates a Bingo list for Risk of Resources Races
 
 
+### How to use
+
+Install java 21.0.1 or newer
+
+Double click .jar file
+
+Be happy
+
+
+
+
+
+
 # Bingos.json:
 
 ### Not included
